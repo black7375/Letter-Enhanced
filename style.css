@@ -81,17 +81,23 @@ p > code.hljs, li > code.hljs { display: inline; padding: .2em }
 .menu_on .area_menu {
   background: #fff;
 }
+
 @media screen and (min-width: 821px) {
   .menu_on #container {
     left: 0;
+}
+
+@media screen and (max-width: 821px) {
   .area_menu .btn_menu {
     display:none;
   }
 }
+
 .menu_on .inner_header .btn_menu {
   left: 0;
   display:none;
 }
+
 .area_menu .btn_menu {
   font-size: 26px;
   position: absolute;
