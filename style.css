@@ -1824,11 +1824,6 @@ html, body {
   }
 
   .category_list .list_horizontal .thumbnail_post {
-    width: 95px;
-    height: 95px;
-  }
-
-  .category_list .list_horizontal .thumbnail_post {
     width: 150px;
     height: 150px;
   }
