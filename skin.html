@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="robots" content="ALL">
-	<meta name="theme-color" content="#EB531F">
+    <meta name="theme-color" content="#EB531F">
 
     <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
     <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
@@ -73,6 +73,7 @@
 
             <!-- area_menu -->
             <div class="area_menu">
+                <button type="button" class="btn_menu"><span class="icon-Close"></span><span class="blind">메뉴</span></button>
 
                 <nav class="menu_navigation">
                     [##_blog_menu_##]
@@ -537,14 +538,6 @@
                                                                                                     class="inp_comment inp_password" />
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="box_inp">
-                                                                                            <div class="inner_inp">
-                                                                                                <input type="url" name="[##_rp_input_homepage_##]"
-                                                                                                    value="" title="홈페이지"
-                                                                                                    placeholder="홈페이지"
-                                                                                                    class="inp_comment inp_homepage" />
-                                                                                            </div>
-                                                                                        </div>
                                                                                     </div>
                                                                                 </s_rp_guest>
 
@@ -769,13 +762,6 @@
                                                                             placeholder="비밀번호" class="inp_comment inp_password" />
                                                                     </div>
                                                                 </div>
-                                                                <div class="box_inp">
-                                                                    <div class="inner_inp">
-                                                                        <input type="url" name="[##_guest_input_homepage_##]"
-                                                                            value="" title="홈페이지" placeholder="홈페이지"
-                                                                            class="inp_comment inp_homepage" />
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </s_guest_form>
                                                     </s_guest_member>
@@ -807,9 +793,10 @@
                                                                 </div>
                                                             </div>
 
-                                                            <s_guest2_container>
+                                                            <s_guest_reply_container>
                                                                 <!-- list_reply_comment -->
                                                                 <ul class="list_reply_comment">
+                                                                <s_guest_reply_rep>
                                                                     <li id='[##_guest_rep_id_##]' class="item_comment reply [##_guest_rep_class_##]">
                                                                         <div class="thumbnail_reply">
                                                                             <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif"
@@ -824,9 +811,10 @@
                                                                             </div>
                                                                         </div>
                                                                     </li>
+                                                                </s_guest_reply_rep>
                                                                 </ul>
                                                                 <!-- // list_reply_comment -->
-                                                            </s_guest2_container>
+                                                            </s_guest_reply_container>
                                                         </li>
                                                     </s_guest_rep>
                                                 </ul>
@@ -865,7 +853,7 @@
                         <s_sidebar>
                             <s_sidebar_element>
                                 <!-- 인기포스트 -->
-                                <div class="related_posts" style="display:none;">
+                                <div class="related_posts">
                                     <div class="related_type related_type_view">
                                         <h2 class="title_related">인기포스트</h2>
                                         <ul class="list_related">

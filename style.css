@@ -6,8 +6,8 @@ body, input
     -webkit-text-stroke-width: 0.02px !important;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 0px 0px 0.001px #ACACAC !important;
-    text-align:justify !important;
-    text-justify:inter-cluster !important;
+    text-align:justify;
+    text-justify:inter-cluster;
     text-rendering: optimizeLegibility;
 }
 
@@ -18,7 +18,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, main, menu,
 
 body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 body, button, input, select, table, textarea {
@@ -37,7 +37,7 @@ img {
 }
 
 ol, ul {
-  list-style: none
+  list-style: none;
 }
 
 address, em {
@@ -46,6 +46,7 @@ address, em {
 
 a {
   color: #666;
+  font-weight: 400;
   text-decoration: none
 }
 
@@ -75,6 +76,37 @@ p > code.hljs, li > code.hljs { display: inline; padding: .2em }
   margin: -1px;
   width: 1px;
   height: 1px
+}
+
+.menu_on .area_menu {
+  background: #fff;
+}
+@media screen and (min-width: 821px) {
+  .menu_on #container {
+    left: 0;
+  .area_menu .btn_menu {
+    display:none;
+  }
+}
+.menu_on .inner_header .btn_menu {
+  left: 0;
+  display:none;
+}
+.area_menu .btn_menu {
+  font-size: 26px;
+  position: absolute;
+  display: block;
+  top: 43px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  margin-top: 0px;
+  background: none;
+  line-height: 0;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  }
 }
 
 /* thema */
@@ -705,7 +737,7 @@ html, body {
 .article_view h3,
 .article_view h4 {
   margin: 24px 0;
-	font-weight: 900;
+  font-weight: 900;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -735,8 +767,8 @@ html, body {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-	font-family: 'Noto Serif KR', serif;
-	font-size: 1.1em;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.1em;
 }
 .article_view blockquote:before {
   color: #ccc;
@@ -801,6 +833,8 @@ html, body {
 .article_view table {
   border: 1px solid #dadce0;
   border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .article_view table thead tr {
@@ -825,6 +859,12 @@ html, body {
   font-size: 16px;
   color: rgba(34, 85, 51, 0.87);
   white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.article_view pre code {
+    overflow-wrap: normal;
+    white-space: pre;
 }
 
 .article_view .cap1 {
@@ -1759,7 +1799,7 @@ html, body {
 
 .category_content_area .list_reply li {
   float: none;
-  width: 100%;
+  width: auto;
   height: auto !important;
 }
 

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
 	<information>
-		<name>Letter</name>
-		<version>1.0</version>
+		<name>Letter - Enhanced</name>
+		<version>1.5</version>
 		<description>
 			<![CDATA[ 최소한의 디자인, 깔끔한 스킨을 원하는 블로거를 위해 만들었습니다.
-			깔끔한 편지지 위에 여러분의 이야기를 들려주세요. ]]>
+			깔끔한 편지지 위에 여러분의 이야기를 들려주세요. 티스토리의 Letter Skin을 수정하였습니다.]]>
 		</description>
 		<license>
 			<![CDATA[ MIT License ]]>
 		</license>
 	</information>
 	<author>
-		<name>TISTORY</name>
-		<homepage>https://www.tistory.com</homepage>
-		<email>tistoryblog@daum.net</email>
+		<name>black7375</name>
+		<homepage>https://black7375.tistory.com</homepage>
+		<email>alstjr7375@daum.net</email>
 	</author>
 	<default>
 		<entriesOnPage>8</entriesOnPage>
@@ -176,7 +176,7 @@
 			<description></description>
 			<type>STRING</type>
 			<option></option>
-			<default>Designed by Tistory.</default>
+			<default>Designed by black7375.</default>
 		</variable>
 		<variable>
 			<name>snsFacebook</name>
