@@ -424,16 +424,19 @@ html, body {
 
 /* menu open */
 .menu_on .area_menu {
-  position: fixed;
   left: 0;
-  transition: 0.2s;
   z-index: 2;
-  border-right: 1px solid #eee;
-  overflow: scroll;
   height: 100%;
 }
 
 /* area_menu */
+.area_menu {
+  position: fixed;
+  transition: left 0.2s ease-out;
+  border-right: 1px solid #eee;
+  overflow: auto;
+}
+
 .area_menu:after {
   content: '';
   display: block;
@@ -546,6 +549,8 @@ html, body {
   width: 100%;
   top: 0;
   z-index: 1;
+  transition: left 0.2s ease-out;
+  left: 0;
 }
 
 /* header */
@@ -1185,7 +1190,7 @@ html, body {
   -webkit-line-clamp: 4;
 }
 
-.index_type_horizontal .list_horizontal li {
+.index_type_horizontal .list_horizontal .list_horizontal_item {
   margin-bottom: 60px;
 }
 
@@ -1250,7 +1255,7 @@ html, body {
 }
 
 .list_related {
-  margin: 0 -10px;
+  margin: 0 -10px 20px;
 }
 
 .list_related:after {
@@ -1343,7 +1348,7 @@ html, body {
 }
 
 .related_type_view .title_related {
-  margin: 40px 0 20px 0;
+  margin: 20px 0;
   font-size: 16px;
 }
 
@@ -1636,7 +1641,7 @@ html, body {
 }
 
 .list_reply .box_reply_content {
-  overflow: hidden
+  padding-left:80px;
 }
 
 .list_reply .item_reply .link_name {
@@ -1648,6 +1653,7 @@ html, body {
 
 .list_reply .box_reply_content .txt {
   font-size: 16px;
+  padding-right: 10px;
 }
 
 .list_reply .list_reply_comment .link_name {
@@ -1683,14 +1689,6 @@ html, body {
 
 .list_reply_comment .item_comment {
   background: #fafafa;
-}
-
-.list_reply .box_reply_content .txt {
-  font-size: 16px;
-}
-
-.item_comment.reply .txt {
-  padding-right: 10px;
 }
 
 /* area_reply - reply_write */
@@ -1804,9 +1802,7 @@ html, body {
 } */
 
 .category_content_area .list_reply li {
-  float: none;
-  width: auto;
-  height: auto !important;
+  margin-bottom:0;
 }
 
 .category_content_area .list_reply_comment {
