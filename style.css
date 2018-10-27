@@ -793,6 +793,21 @@ html, body {
   display: inline;
 }
 
+.article_view blockquote.none {
+	margin: 0;
+  padding-left: 19px;
+  border-left: 1px solid #4167d9;
+  font-size: 16px;
+	font-family: initial;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.article_view blockquote.simple:before,
+.article_view blockquote.none:before {
+	content: none;
+}
+
 .article_view img {
   width: 100%;
   max-width: 100%;
