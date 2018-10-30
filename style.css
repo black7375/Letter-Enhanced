@@ -947,6 +947,15 @@ html, body {
   height: auto !important;
 }
 
+.article_view img:hover {
+  transform: scale(1.03);
+  -moz-box-shadow: 1px 1px 5px #ACACAC;
+  -webkit-box-shadow: 1px 1px 5px #ACACAC;
+  box-shadow: 1px 1px 5px #ACACAC;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+ }
+
 .article_view ul,
 .article_view ol {
   margin: 0;
