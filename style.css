@@ -838,7 +838,20 @@ html, body {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-.article_view blockquote p {
+
+.article_view blockquote footer {
+  margin-top: 0.5em;
+  padding: 0;
+  color: #666;
+  font-size: 0.9em;
+  text-align: right;
+  font-style: italic;
+}
+.article_view blockquote footer:before {
+  content: '— ';
+}
+
+.article_view blockquote.inline *:not(footer) {
   display: inline;
 }
 
