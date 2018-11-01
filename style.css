@@ -855,6 +855,16 @@ html, body {
   display: inline;
 }
 
+.article_view blockquote.mobile {
+	border-left: initial;
+  margin: 24px 0;
+  padding: 25px 20px 0 !important;
+  line-height: 28px;
+  color: #000;
+  background: url(//t1.daumcdn.net/tistory_admin/static/mobile/m320/ico_quoto.png) no-repeat 50% 6px;
+  text-align: center;
+}
+
 .article_view blockquote.none {
 	margin: 0;
   padding-left: 19px;
@@ -866,8 +876,15 @@ html, body {
 }
 
 .article_view blockquote.simple:before,
+.article_view blockquote.mobile:before,
 .article_view blockquote.none:before {
 	content: none;
+}
+
+.article_view blockquote ol:last-child,
+.article_view blockquote ul:last-child,
+.article_view blockquote p:last-child {
+	margin-bottom:0
 }
 
 .article_view hr {
