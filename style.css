@@ -984,7 +984,56 @@ html, body {
   box-shadow: 1px 1px 5px #ACACAC;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
- }
+}
+
+.article_view .moreless_fold,
+.article_view .moreless_top,
+.article_view .moreless_bottom{
+	padding-left:20px;
+	font-weight:700;
+}
+
+.article_view .moreless_fold span,
+.article_view .moreless_top span,
+.article_view .moreless_bottom span{
+	font-weight:700;
+}
+
+.article_view .moreless_fold:after {
+  content: '\f0d7';
+  font-family: "Font Awesome 5 Free";
+}
+
+.article_view .moreless_top:before,
+.article_view .moreless_bottom:before {
+	position: absolute;
+  height: 1px;
+  margin-top: 0.9em;
+  border-top: 2px solid;
+	content: '';
+}
+
+.article_view .moreless_top:before {
+	left: 9%;
+  right: 0;
+}
+.article_view .moreless_top:after {
+	content: '\f0d8';
+	font-family: "Font Awesome 5 Free";
+}
+
+.article_view .moreless_bottom {
+	padding-right: 20px;
+	text-align: right;
+}
+.article_view .moreless_bottom:before {
+	left: 0;
+  right: 9%;
+}
+.article_view .moreless_bottom:after {
+	content: '\f0d8';
+	font-family: "Font Awesome 5 Free";
+}
 
 .article_view ul,
 .article_view ol {
