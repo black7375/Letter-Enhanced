@@ -2624,7 +2624,7 @@ html, body {
   display: none;
 }
 
-.index_type_common .index_type_horizontal_line2. li.list_horizontal_item:nth-child(n+3) {
+.index_type_common .index_type_horizontal_line2. .list_horizontal li.list_horizontal_item:nth-child(n+3) {
   display: none;
 }
 
