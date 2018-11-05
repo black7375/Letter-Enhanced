@@ -78,6 +78,7 @@ p > code.hljs, li > code.hljs { display: inline; padding: .2em }
   height: 1px
 }
 
+/*Menu Button*/
 .menu_on .area_menu {
   background: #fff;
 }
@@ -85,33 +86,33 @@ p > code.hljs, li > code.hljs { display: inline; padding: .2em }
 @media screen and (min-width: 821px) {
   .menu_on #container {
     left: 0;
+  }
+
+  .menu_on .inner_header .btn_menu {
+    left: 0;
+    display:none;
+  }
+
+  .area_menu .btn_menu {
+    font-size: 26px;
+    position: absolute;
+    display: block;
+    top: 43px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    background: none;
+    line-height: 0;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+  }
 }
 
 @media screen and (max-width: 821px) {
   .area_menu .btn_menu {
     display:none;
-  }
-}
-
-.menu_on .inner_header .btn_menu {
-  left: 0;
-  display:none;
-}
-
-.area_menu .btn_menu {
-  font-size: 26px;
-  position: absolute;
-  display: block;
-  top: 43px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  margin-top: 0px;
-  background: none;
-  line-height: 0;
-  color: #000;
-  cursor: pointer;
-  outline: none;
   }
 }
 
