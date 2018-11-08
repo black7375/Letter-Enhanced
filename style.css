@@ -1018,6 +1018,32 @@ html, body {
   transition: all .2s ease;
 }
 
+.article_view .cover {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+	color: #eee;
+	display: block;
+}
+
+.article_view .cover * {
+	background-color: transparent;
+	color: inherit;
+}
+
+.article_view .cover.light {
+	color: initial;
+}
+
+.article_view .cover.natural * {
+	color: #fff;
+	mix-blend-mode: exclusion;
+}
+
 .article_view .moreless_fold,
 .article_view .moreless_top,
 .article_view .moreless_bottom{
