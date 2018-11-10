@@ -1055,11 +1055,13 @@ html, body {
 .article_view .moreless_top span,
 .article_view .moreless_bottom span{
 	font-weight:700;
+	background-color: #fff;
 }
 
 .article_view .moreless_fold:after {
   content: '\f0d7';
   font-family: "Font Awesome 5 Free";
+	background-color: #fff;
 }
 
 .article_view .moreless_top:before,
@@ -1069,6 +1071,7 @@ html, body {
   margin-top: 0.9em;
   border-top: 2px solid;
 	content: '';
+	z-index: -1;
 }
 
 .article_view .moreless_top:before {
@@ -1078,6 +1081,7 @@ html, body {
 .article_view .moreless_top:after {
 	content: '\f0d8';
 	font-family: "Font Awesome 5 Free";
+	background-color: #fff;
 }
 
 .article_view .moreless_bottom {
@@ -1091,6 +1095,7 @@ html, body {
 .article_view .moreless_bottom:after {
 	content: '\f0d8';
 	font-family: "Font Awesome 5 Free";
+	background-color: #fff;
 }
 
 .article_view ul,
