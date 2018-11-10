@@ -1173,8 +1173,14 @@ html, body {
 }
 
 .article_view pre code {
-    overflow-wrap: normal;
-    white-space: pre;
+  overflow-wrap: normal;
+  white-space: pre;
+  overflow-x: inherit;
+}
+
+.article_view pre:hover,
+.article_view pre code:hover {
+  overflow-x: auto;
 }
 
 .article_view .cap1 {
