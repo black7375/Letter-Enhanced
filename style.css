@@ -63,7 +63,7 @@ iframe {
 }
 
 pre, code { font-family: Hack, D2Coding, 'D2 coding', monospace; }
-p > code.hljs, li > code.hljs { display: inline; padding: .2em }
+p > code.hljs, li > code.hljs { display: inline; padding: .2em; border-radius: 3px; }
 
 ::selection {
     color: #EAEAEA;
@@ -1170,7 +1170,7 @@ html, body {
   font-size: 16px;
   color: rgba(34, 85, 51, 0.87);
   white-space: pre-wrap;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .article_view pre code {
