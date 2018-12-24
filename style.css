@@ -8,7 +8,6 @@ body, input
     text-shadow: 0px 0px 0.001px #ACACAC !important;
     text-align:justify;
     text-justify:inter-cluster;
-    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -779,6 +778,7 @@ html, body {
 .article_content .article_view {
   font-size: 16px;
   line-height: 28px;
+  text-rendering: optimizeLegibility;
 }
 
 .article_content .article_view a {
