@@ -1060,6 +1060,25 @@ html, body {
   transition: all .2s ease;
 }
 
+.article_view .imageblock > a[href*="attachment"] {
+    position: relative;
+    display: block;
+    padding: 1em;
+    border: 5px solid #333;
+    text-rendering: initial;
+}
+
+.article_view .imageblock > a[href*="attachment"] img {
+    display: none;
+}
+
+.article_view .imageblock > a[href*="attachment"]:before {
+    content: '\f381';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: xx-large;
+}
+
 .article_view .cover {
 	background-repeat: no-repeat;
 	background-position: center center;
