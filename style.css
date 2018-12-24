@@ -115,6 +115,24 @@ p > code.hljs, li > code.hljs { display: inline; padding: .2em }
   }
 }
 
+/* Bug fix */
+.tt_menubar_inner {
+  width: 375px;
+  padding: 5px 5px 0 10px;
+}
+
+.another_category table {
+  border: none !important;
+  border-collapse: initial !important;
+  border-spacing: 0 !important;
+}
+
+.another_category th,
+.another_category td {
+  padding: 0 0 1px !important;
+  border: none !important;
+}
+
 /* thema */
 /* thema_aqua */
 .thema_aqua .title_post:hover {
