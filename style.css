@@ -706,9 +706,9 @@ html, body {
 /* main */
 .inner_index {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* main - index_type_common */
