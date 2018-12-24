@@ -78,6 +78,10 @@ p > code.hljs, li > code.hljs { display: inline; padding: .2em; border-radius: 3
   height: 1px
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Menu Button*/
 .menu_on .area_menu {
   background: #fff;
