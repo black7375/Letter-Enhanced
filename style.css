@@ -1141,7 +1141,8 @@ html, body {
 }
 
 .article_view ul,
-.article_view ol {
+.article_view ol,
+.article view dl {
   margin: 0;
   padding: 0 0 0 23px;
 }
@@ -1176,6 +1177,29 @@ html, body {
   line-height: 1.75;
   color: rgba(0, 0, 0, 0.87);
   word-break: break-all;
+}
+
+.article_view dt {
+    font-weight: 700;
+}
+
+.article_view dd {
+    background:none no-repeat left top;
+    padding: 0 0 0 3em;
+}
+
+.article_view dl.colon dt {
+    float: left;
+    clear: left;
+    text-align: right;
+}
+
+.article_view dl.colon dt:after {
+    content: ":";
+}
+
+.article_view dl.colon dd {
+    margin: 0 0 0 1em;
 }
 
 .article_view figure {
