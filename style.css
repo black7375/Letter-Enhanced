@@ -1342,10 +1342,6 @@ body {
   margin: 30px 0;
 }
 
-.article_view iframe {
-  background-color: #dadce0;
-}
-
 @media screen and (max-width: 743px) {
   .article_view iframe {
     width: 100%;
