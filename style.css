@@ -1956,7 +1956,9 @@ html, body {
 
 /* media query - mobile - area_view_content */
 @media screen and (max-width: 820px) {
-
+	.inner_index {
+		overflow: hidden;
+	}
 }
 
 /* area_reply */
@@ -2500,6 +2502,10 @@ html, body {
 
 /* media query - mobile */
 @media screen and (max-width: 820px) {
+	.inner_index {
+		overflow: hidden;
+	}
+
   body, button, input, select, table, textarea {
     font-size: 12px;
   }
@@ -2722,6 +2728,13 @@ html, body {
 
 /* media query - mobile */
 @media screen and (max-width: 480px) {
+	.MathJax_Display {
+		overflow-x: auto;
+	}
+	.inner_index {
+		overflow: hidden;
+	}
+
   .item_comment.reply {
     padding: 30px 0 30px 15px;
   }
