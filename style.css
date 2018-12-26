@@ -1396,7 +1396,6 @@ html, body {
 
 /* media query - mobile - index_type_post */
 @media screen and (max-width: 820px) {
-
   .index_type_post {
     margin-top: 60px;
   }
@@ -2502,10 +2501,6 @@ html, body {
 
 /* media query - mobile */
 @media screen and (max-width: 820px) {
-	.inner_index {
-		overflow: hidden;
-	}
-
   body, button, input, select, table, textarea {
     font-size: 12px;
   }
@@ -2734,6 +2729,10 @@ html, body {
 	.inner_index {
 		overflow: hidden;
 	}
+        .article_view pre,
+        .article_view pre code {
+            overflow-x: auto;
+        }
 
   .item_comment.reply {
     padding: 30px 0 30px 15px;
