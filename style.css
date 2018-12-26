@@ -1612,7 +1612,7 @@ html, body {
   }
 
   .index_type_horizontal .list_horizontal li {
-    margin-bottom: 40px;
+    margin-bottom: 0.2em;
   }
 
   .index_type_horizontal .thumbnail_post {
@@ -1770,7 +1770,7 @@ html, body {
   display: block;
   float: right;
   font-size: 14px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.7px;
 }
 
 
