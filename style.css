@@ -221,6 +221,11 @@ html {
   border: none !important;
 }
 
+div.table-overflow table,
+div.table-overflow table * {
+  border: transparent !important;
+}
+
 /* thema */
 /* thema_aqua */
 .thema_aqua .title_post:hover {
