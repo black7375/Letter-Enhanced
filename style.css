@@ -714,6 +714,9 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 900;
+  color: #111;
 }
 
 @media screen and (max-width: 743px) {
