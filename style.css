@@ -77,6 +77,12 @@ li>code.hljs {
   border-radius: 3px;
 }
 
+code.hljs .ml-ko {
+  font-family: D2Coding, 'D2 coding', monospace;
+  font-size: 1.17em;
+  letter-spacing: 0.6px;
+}
+
 ::selection {
   color: #EAEAEA;
   background: #007878;
