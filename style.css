@@ -1153,6 +1153,11 @@ body {
   transition: all .2s ease;
 }
 
+.article_view img.txc-emo {
+  width: auto;
+  display: inline;
+}
+
 .article_view .imageblock>a[href*="attachment"] {
   position: relative;
   display: block;
