@@ -358,9 +358,10 @@
                         </s_list>
 
                         <!-- category_list -->
-                        <div class="category_list index_type_common index_type_[##_var_penelopeListType_##]">
-                            <ul class="list_[##_var_penelopeListType_##]">
-                                <s_article_rep>
+                        <s_article_rep>
+                            <div class="category_list index_type_common index_type_[##_var_penelopeListType_##]">
+                                <ul class="list_[##_var_penelopeListType_##]">
+                                
                                     <s_index_article_rep>
                                         <li class="list_horizontal_item">
                                             <div class="article_content">
@@ -395,8 +396,7 @@
                                                 <!-- article_content -->
                                                 <div class="article_content">
                                                     <div class="info_post">
-                                                        <a href="[##_article_rep_link_##]" class="link_title"><strong
-                                                                class="title_view">[##_article_rep_title_##]</strong></a>
+                                                        <a href="[##_article_rep_link_##]" class="link_title"><div class="title_view">[##_article_rep_title_##]</div></a>
                                                         <div class="view_info_post">
                                                             <a href="[##_article_rep_category_link_##]" class="link_category thema_apply"><span
                                                                     class="category">[##_article_rep_category_##]</span></a>
@@ -439,7 +439,7 @@
                                                                         <a href="[##_article_related_rep_link_##]"
                                                                             class="link_related" <s_article_related_rep_thumbnail>style="background-image:url('[##_article_related_rep_thumbnail_link_##]') !important"</s_article_related_rep_thumbnail>>
                                                                             <span class="bg"></span>
-                                                                            <span class="txt"><strong>[##_article_related_rep_title_##]</strong>[##_article_related_rep_date_##]</span>
+                                                                            <span class="txt"><strong>[##_article_related_rep_title_##]</strong></span>
                                                                         </a>
                                                                     </li>
                                                                 </s_article_related_rep>
@@ -451,9 +451,11 @@
                                                     <!-- area_comment -->
                                                     <div class="area_reply">
                                                         <div class="box_reply_info">
+                                                            <a href="#rp" onclick="[##_article_rep_rp_link_##]" class="reply_events">
                                                             <p class="item_info">댓글 <span class="thema_apply">
                                                                     <s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>
                                                                 </span></p>
+                                                            </a>
                                                             <button type="button" class="btn_fold"><span class="blind">댓글
                                                                     접기</span></button>
                                                             <button type="button" class="btn_spread" style="display: none;"><span
@@ -469,52 +471,43 @@
                                                                 <!-- box_comment_list -->
                                                                 <div class="box_comment_list">
                                                                     <s_rp_container>
-                                                                        <ul class="list_reply">
-                                                                            <s_rp_rep>
-                                                                                <li id='[##_rp_rep_id_##]' class="item_reply [##_rp_rep_class_##]">
-                                                                                    <div class="thumbnail_reply">
-                                                                                        <img src="//i1.daumcdn.net/thumb/C100x100/?fname=[##_rp_rep_logo_##]"
-                                                                                            width="50" height="50" alt="프로필사진">
-                                                                                    </div>
-                                                                                    <div class="box_reply_content">
-                                                                                        <div class="link_name">[##_rp_rep_name_##]</div>
-                                                                                        <p class="txt">[##_rp_rep_desc_##]</p>
-                                                                                        <span class="date">[##_rp_rep_date_##]</span>
-                                                                                        <div class="modify">
-                                                                                            <a href="#" onclick="[##_rp_rep_onclick_reply_##]">답글</a>
-                                                                                            <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                        <div class="comment-list">
+                                                                            <ul>
+                                                                                <s_rp_rep>
+                                                                                    <li id="[##_rp_rep_id_##]">
+                                                                                        <div class="author-meta">
+                                                                                            <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+                                                                                            <span class="nickname">[##_rp_rep_name_##]</span>
+                                                                                            <span class="date">[##_rp_rep_date_##]</span>
                                                                                         </div>
-                                                                                    </div>
-
-                                                                                    <s_rp2_container>
-                                                                                        <!-- list_reply_comment -->
-                                                                                        <ul class="list_reply_comment">
-                                                                                            <s_rp2_rep>
-                                                                                                <li id='[##_rp_rep_id_##]'
-                                                                                                    class="item_comment reply [##_rp_rep_class_##]">
-                                                                                                    <div class="thumbnail_reply">
-                                                                                                        <img src="//i1.daumcdn.net/thumb/C100x100/?fname=[##_rp_rep_logo_##]"
-                                                                                                            width="50"
-                                                                                                            height="50"
-                                                                                                            alt="프로필사진">
-                                                                                                    </div>
-                                                                                                    <div class="box_reply_content">
-                                                                                                        <p class="link_name">[##_rp_rep_name_##]</p>
-                                                                                                        <p class="txt">[##_rp_rep_desc_##]</p>
-                                                                                                        <span class="date">[##_rp_rep_date_##]</span>
-                                                                                                        <div class="modify">
-                                                                                                            <a href="#"
-                                                                                                                onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                                        <p>[##_rp_rep_desc_##]</p>
+                                                                                        <div class="control">
+                                                                                            <a href="[##_rp_rep_link_##]">댓글주소</a>
+                                                                                            <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                                            <a href="#" onclick="[##_rp_rep_onclick_reply_##]">댓글쓰기</a>
+                                                                                        </div>
+                                                                                        <s_rp2_container>
+                                                                                            <ul>
+                                                                                                <s_rp2_rep>
+                                                                                                    <li id="[##_rp_rep_id_##]">
+                                                                                                        <div class="author-meta">
+                                                                                                            <img src="[##_rp_rep_logo_##]" class="avatar" alt="">
+                                                                                                            <span class="nickname">[##_rp_rep_name_##]</span>
+                                                                                                            <span class="date">[##_rp_rep_date_##]</span>
                                                                                                         </div>
-                                                                                                    </div>
-                                                                                                </li>
-                                                                                            </s_rp2_rep>
-                                                                                        </ul>
-                                                                                        <!-- // list_reply_comment -->
-                                                                                    </s_rp2_container>
-                                                                                </li>
-                                                                            </s_rp_rep>
-                                                                        </ul>
+                                                                                                        <p>[##_rp_rep_desc_##]</p>
+                                                                                                        <div class="control">
+                                                                                                            <a href="[##_rp_rep_link_##]">댓글주소</a>
+                                                                                                            <a href="#" onclick="[##_rp_rep_onclick_delete_##]">수정/삭제</a>
+                                                                                                        </div>
+                                                                                                    </li>
+                                                                                                </s_rp2_rep>
+                                                                                            </ul>
+                                                                                        </s_rp2_container>
+                                                                                    </li>
+                                                                                </s_rp_rep>
+                                                                            </ul>
+                                                                        </div>
                                                                     </s_rp_container>
                                                                 </div>
                                                                 <!-- // box_comment_list -->
@@ -580,16 +573,17 @@
                                             </div>
                                         </li>
                                     </s_permalink_article_rep>
-                                </s_article_rep>
+                                
 
-                            </ul>
-                        </div>
+                                </ul>
+                            </div>
+                        </s_article_rep>
 
                         <s_article_protected>
                             <s_index_article_rep>
                                 <div class="category_list index_type_common index_type_horizontal">
                                     <ul class="list_horizontal">
-                                        <li  class="list_horizontal_item">
+                                        <li class="list_horizontal_item">
                                             <div class="article_content">
                                                 <div class="box_contents">
                                                     <a href="[##_article_rep_link_##]" class="link_title"><strong class="title_view">[##_article_rep_title_##]</strong></a>
@@ -662,7 +656,7 @@
                             <s_index_article_rep>
                                 <div class="category_list index_type_common index_type_horizontal">
                                     <ul class="list_horizontal">
-                                        <li  class="list_horizontal_item">
+                                        <li class="list_horizontal_item">
                                             <div class="article_content">
                                                 <s_notice_rep_thumbnail>
                                                     <a href="[##_notice_rep_link_##]" class="thumbnail_post" data-image="[##_notice_rep_thumbnail_url_##]"
@@ -747,7 +741,6 @@
 
                         <s_guest>
                             <div class="area_view_content">
-                                <div class="article_content">
                                     <div class="area_reply">
                                         <s_guest_input_form>
                                             <!-- reply_write -->
@@ -788,52 +781,44 @@
 
                                         <div class="box_comment_list">
                                             <s_guest_container>
-                                                <ul class="list_reply">
-                                                    <s_guest_rep>
-                                                        <li id='[##_guest_rep_id_##]' class="item_reply [##_guest_rep_class_##]">
-                                                            <div class="thumbnail_reply">
-                                                                <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif"
-                                                                    width="50" height="50" alt="프로필 사진">
-                                                            </div>
-                                                            <div class="box_reply_content">
-                                                                <a href="#" class="link_name">[##_guest_rep_name_##]</a>
-                                                                <p class="txt">[##_guest_rep_desc_##]</p>
-                                                                <span class="date">[##_guest_rep_date_##]</span>
-                                                                <div class="modify">
-                                                                    <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a><a
-                                                                        href="#" onclick="[##_guest_rep_onclick_reply_##]">답글</a>
+                                                <div class="comment-list">
+                                                    <ul>
+                                                        <s_guest_rep>
+                                                            <li id="[##_guest_rep_id_##]">
+                                                                <div class="author-meta">
+                                                                    <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="">
+                                                                    <span class="nickname">[##_guest_rep_name_##]</span>
+                                                                    <span class="date">[##_guest_rep_date_##]</span>
                                                                 </div>
-                                                            </div>
-
-                                                            <s_guest_reply_container>
-                                                                <!-- list_reply_comment -->
-                                                                <ul class="list_reply_comment">
-                                                                <s_guest_reply_rep>
-                                                                    <li id='[##_guest_rep_id_##]' class="item_comment reply [##_guest_rep_class_##]">
-                                                                        <div class="thumbnail_reply">
-                                                                            <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif"
-                                                                                width="50" height="50" alt="프로필 사진">
-                                                                        </div>
-                                                                        <div class="box_reply_content">
-                                                                            <a href="#" class="link_name">[##_guest_rep_name_##]</a>
-                                                                            <p class="txt">[##_guest_rep_desc_##]</p>
-                                                                            <span class="date">[##_guest_rep_date_##]</span>
-                                                                            <div class="modify">
-                                                                                <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </li>
-                                                                </s_guest_reply_rep>
-                                                                </ul>
-                                                                <!-- // list_reply_comment -->
-                                                            </s_guest_reply_container>
-                                                        </li>
-                                                    </s_guest_rep>
-                                                </ul>
+                                                                <p>[##_guest_rep_desc_##]</p>
+                                                                <div class="control">
+                                                                    <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                                    <a href="#" onclick="[##_guest_rep_onclick_reply_##]">댓글쓰기</a>
+                                                                </div>
+                                                                <s_guest_reply_container>
+                                                                    <ul>
+                                                                        <s_guest_reply_rep>
+                                                                            <li id="[##_guest_rep_id_##]">
+                                                                                <div class="author-meta">
+                                                                                    <img src="//t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" class="avatar" alt="">
+                                                                                    <span class="nickname">[##_guest_rep_name_##]</span>
+                                                                                    <span class="date">[##_guest_rep_date_##]</span>
+                                                                                </div>
+                                                                                <p>[##_guest_rep_desc_##]</p>
+                                                                                <div class="control">
+                                                                                    <a href="#" onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                                                </div>
+                                                                            </li>
+                                                                        </s_guest_reply_rep>
+                                                                    </ul>
+                                                                </s_guest_reply_container>
+                                                            </li>
+                                                        </s_guest_rep>
+                                                    </ul>
+                                                </div>
                                             </s_guest_container>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </s_guest>
 
@@ -841,13 +826,13 @@
                             <!-- area_paging -->
                             <div class="area_paging">
                                 <div class="inner_paging thema_apply">
-                                    <a [##_prev_page_##] class="link_page link_prev [##_no_more_prev_##]"><span class="icon-Keyboard-Arrow---Left"></span><span class="pc_blind">이전</span></a>
+                                    <a [##_prev_page_##] class="link_page link_prev [##_no_more_prev_##]"><span class="icon-Keyboard-Arrow---Left"></span><span class="blind">이전</span></a>
                                     <div class="paging_num">
                                         <s_paging_rep>
                                             <a [##_paging_rep_link_##] class="link_num">[##_paging_rep_link_num_##]</a>
                                         </s_paging_rep>
                                     </div>
-                                    <a [##_next_page_##] class="link_page link_next [##_no_more_next_##]"></span><span class="pc_blind">다음</span><span class="icon-Keyboard-Arrow---Right"></span></a>
+                                    <a [##_next_page_##] class="link_page link_next [##_no_more_next_##]"></span><span class="blind">다음</span><span class="icon-Keyboard-Arrow---Right"></span></a>
                                 </div>
                             </div>
                             <!-- // area_paging -->
@@ -873,7 +858,7 @@
                                                 <li>
                                                     <a href="[##_rctps_rep_link_##]" class="link_related" <s_rctps_rep_thumbnail>style="background-image:url('[##_rctps_rep_thumbnail_##]')"</s_rctps_rep_thumbnail>>
                                                         <span class="bg"></span>
-                                                        <span class="txt"><strong>[##_rctps_rep_title_##]</strong>[##_rctps_rep_author_##]</span>
+                                                        <span class="txt"><strong>[##_rctps_rep_title_##]</strong></span>
                                                     </a>
                                                 </li>
                                             </s_rctps_popular_rep>
