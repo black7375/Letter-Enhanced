@@ -626,6 +626,10 @@ html, body {
   font-size: 16px;
 }
 
+.article_content img {
+  max-width: 100%;
+}
+
 .index_type_common .title_category {
   margin-bottom: 20px;
   font-size: 16px;
@@ -801,7 +805,7 @@ html, body {
   color: rgba(34, 85, 51, 0.87);
   white-space: pre-wrap;
 }
-.article_view pre code {
+.article_view pre code.hljs {
   padding: 20px;
 }
 
@@ -1113,7 +1117,7 @@ html, body {
   margin-bottom: 20px;
   line-height: 24px;
   -webkit-line-clamp: 2;
-	
+
 }
 
 .index_type_horizontal_line4 .txt_post {
@@ -2363,7 +2367,7 @@ html, body {
 		display: block;
 		margin: 9px 0 18px -2px;
   }
-  
+
   .comment-list ul li ul li .control {
     top: auto;
   }
@@ -2438,4 +2442,9 @@ html, body {
 
 .another_category th span {
   vertical-align: middle;
+}
+
+.btn_less::before, .btn_more::before {
+  content: "";
+  padding-left:12px;
 }
