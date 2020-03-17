@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>Letter</name>
+		<version>1.1</version>
+		<description>
+			<![CDATA[ 최소한의 디자인, 깔끔한 스킨을 원하는 블로거를 위해 만들었습니다. 깔끔한 편지지 위에 여러분의 이야기를 들려주세요. ]]>
+		</description>
+		<license>
+			<![CDATA[ MIT License ]]>
+		</license>
+	</information>
+	<author>
+		<name>Tistory</name>
+		<homepage>http://www.tistory.com</homepage>
+		<email>tistoryblog@daum.net</email>
+	</author>
+	<default>
+		<recentEntries>4</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>5</itemsOnGuestbook>
+		<tagsInCloud>20</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>1</expandComment>
+		<lengthOfRecentNotice>40</lengthOfRecentNotice>
+		<lengthOfRecentEntry>30</lengthOfRecentEntry>
+		<lengthOfRecentComment>40</lengthOfRecentComment>
+		<lengthOfRecentTrackback>40</lengthOfRecentTrackback>
+		<lengthOfLink>40</lengthOfLink>
+		<commentMessage>
+			<none>0</none>
+			<single>1</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>0</none>
+			<single>1</single>
+		</trackbackMessage>
+		<contentWidth>725</contentWidth>
+		<toolbar>white</toolbar>
+	</default>
+	<cover>
+		<item>
+			<name>post1</name>
+			<label><![CDATA[ 메인 리스트 ]]></label>
+			<description><![CDATA[ 블로그 형태로 출력합니다. 내용을 출력합니다. ]]></description>
+		</item>
+		<item>
+			<name>gallery</name>
+			<label><![CDATA[ 섬네일 리스트 ]]></label>
+			<description><![CDATA[ 정사각형 썸네일 목록을 출력합니다. 4개 목록에 최적화 되어있습니다. ]]></description>
+		</item>
+		<item>
+			<name>horizontal</name>
+			<label><![CDATA[ 리스트 ]]></label>
+			<description><![CDATA[ 사진과 제목, 내용을 가로로 출력합니다.]]></description>
+		</item>
+		<item>
+			<name>blind</name>
+			<label><![CDATA[ 갤러리 ]]></label>
+			<description><![CDATA[ 대표사진을 배경으로 한 목록을 출력합니다. ]]></description>
+		</item>
+	</cover>
+	<variables>
+		<variable>
+			<name>logoImage</name>
+			<label>로고 (높이 82px)</label>
+			<description></description>
+			<type>IMAGE</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>penelopeColorSet</name>
+			<label>컬러셋</label>
+			<description></description>
+			<type>SELECT</type>
+			<option><![CDATA[
+				[
+					{"name":"thema_aqua", "label":"아쿠아(기본)", "value":"thema_aqua"},
+					{"name":"thema_blue", "label":"블루", "value":"thema_blue"},
+					{"name":"thema_black", "label":"블랙", "value":"thema_black"},
+					{"name":"thema_purple", "label":"퍼플", "value":"thema_purple"},
+					{"name":"thema_orange", "label":"오렌지", "value":"thema_orange"}
+				]
+			]]></option>
+			<default>thema_aqua</default>
+		</variable>
+		<variable>
+			<name>penelopeListType</name>
+			<label>글 목록 형태</label>
+			<description></description>
+			<type>SELECT</type>
+			<option><![CDATA[
+				[
+					{"name":"horizontal", "label":"기본형", "value":"horizontal"},
+					{"name":"gallery", "label":"갤러리", "value":"gallery"}
+				]
+			]]></option>
+			<default>horizontal</default>
+		</variable>
+		<variable>
+			<name>footerCopyright</name>
+			<label>하단 카피라이트</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>Designed by Tistory.</default>
+		</variable>
+		<variable>
+			<name>snsFacebook</name>
+			<label>페이스북 링크</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>snsTwitter</name>
+			<label>트위터 링크</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>#</default>
+		</variable>
+		<variable>
+			<name>snsInstagram</name>
+			<label>인스타그램 링크</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>#</default>
+		</variable>
+	</variables>
+</skin>
