@@ -1200,57 +1200,75 @@ body {
   mix-blend-mode: exclusion;
 }
 
+.article_view .btn_more,
+.article_view .btn_less,
 .article_view .moreless_fold,
 .article_view .moreless_top,
 .article_view .moreless_bottom {
   padding-left: 20px;
   font-weight: 700;
+  color: black;
+  cursor: pointer;
 }
 
+.article_view .btn_more span,
+.article_view .btn_less span,
 .article_view .moreless_fold span,
 .article_view .moreless_top span,
 .article_view .moreless_bottom span {
-  font-weight: 700;
   background-color: #fff;
 }
 
+.article_view .btn_more:before,
+.article_view .moreless_fold:before {
+  content: '';
+}
+
+.article_view .btn_more:after,
 .article_view .moreless_fold:after {
   content: '\f0d7';
   font-family: "Font Awesome 5 Free";
   background-color: #fff;
 }
 
+.article_view .btn_less:before,
 .article_view .moreless_top:before,
 .article_view .moreless_bottom:before {
   position: absolute;
   height: 1px;
+  margin-left: -1.5em;
   margin-top: 0.9em;
   border-top: 2px solid;
   content: '';
   z-index: -1;
 }
 
+.article_view .btn_less:nth-child(odd):before,
 .article_view .moreless_top:before {
   left: 9%;
   right: 0;
 }
 
+.article_view .btn_less:nth-child(odd):before,
 .article_view .moreless_top:after {
-  content: '\f0d8';
+  content: '\f0d7';
   font-family: "Font Awesome 5 Free";
   background-color: #fff;
 }
 
+.article_view .btn_less:nth-child(even),
 .article_view .moreless_bottom {
   padding-right: 20px;
   text-align: right;
 }
 
+.article_view .btn_less:nth-child(even):before,
 .article_view .moreless_bottom:before {
   left: 0;
   right: 9%;
 }
 
+.article_view .btn_less:nth-child(even):after,
 .article_view .moreless_bottom:after {
   content: '\f0d8';
   font-family: "Font Awesome 5 Free";
