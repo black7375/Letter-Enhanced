@@ -1,16 +1,13 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900|Noto+Serif+KR:500,700,900&subset=korean');
-
 /* Text */
 body,
 input {
   -webkit-text-stroke-width: 0.02px !important;
   -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   text-shadow: 0px 0px 0.001px #ACACAC !important;
   text-align: justify;
   text-justify: inter-cluster;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* basic */
