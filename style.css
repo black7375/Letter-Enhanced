@@ -1436,12 +1436,21 @@ body {
   margin: 0 auto;
 }
 
+.index_type_common .btn_more:before {
+  content: '';
+}
+
+.index_type_common .btn_more:after {
+  content: '...';
+}
+
 .index_type_common .btn_more {
   display: block;
   width: 102px;
   height: 35px;
   color: #fff;
   font-weight: 700;
+  text-align: center;
   cursor: pointer;
   outline: none;
 }
