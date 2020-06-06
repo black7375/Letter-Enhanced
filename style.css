@@ -1236,7 +1236,6 @@ body {
 .article_view .moreless_bottom:before {
   position: absolute;
   height: 1px;
-  margin-left: -1.5em;
   margin-top: 0.9em;
   border-top: 2px solid;
   content: '';
