@@ -1016,7 +1016,7 @@ body {
   padding: 25px 20px 0 !important;
   line-height: 28px;
   color: #000;
-  background: url(//t1.daumcdn.net/tistory_admin/static/mobile/m320/ico_quoto.png) no-repeat 50% 6px;
+  background: url("https://t1.daumcdn.net/tistory_admin/static/mobile/m320/ico_quoto.png") no-repeat 50% 6px;
   text-align: center;
 }
 
