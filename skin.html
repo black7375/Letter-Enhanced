@@ -11,6 +11,19 @@
     <meta name="robots" content="ALL">
     <meta name="theme-color" content="#EB531F">
 
+    <!-- PreConnect -->
+    <link rel="dns-prefetch" href="//t1.daumcdn.net">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://t1.daumcdn.net/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
+
+    <!-- Tistory Default Resources -->
     <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
     <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
 
@@ -20,61 +33,23 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./images/style_webicon.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="./images/common.js"></script>
 
     <!--Highlight js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/darcula.min.css">
-    <script type="text/javascript" async="" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-     $(document).ready(function() {
-       $('code').each(function(i, block) {
-         hljs.highlightBlock(block);
-       });
-     });
-    </script>
-
-    <!--MathJax(LaTeX) -->
-    <script type="text/x-mathjax-config">
-     MathJax.Hub.Config({
-       "HTML-CSS": {
-         messageStyle: "normal",
-         linebreaks: {
-           automatic: false
-         },
-         undefinedFamily: "'STIX Two Math', STIXGeneral, 'Arial Unicode MS', 'Noto Serif KR', serif"
-       },
-       tex2jax: {
-         inlineMath: [["$","$"],["\\(","\\)"]],
-         displayMath: [["$$","$$"],["\\[","\\]"]],
-         processEscapes: true
-       },
-       TeX: {
-         Macros: {
-           tr: "{\\scriptscriptstyle\\mathrm{T}}",
-         },
-         extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "mhchem.js"]
-       }
-     });
-    </script>
-    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML">
-    </script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/styles/darcula.min.css">
+    <!--Noto Font-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Noto+Serif+KR:wght@500;700;900&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Noto+Serif+KR:wght@500;700;900&display=swap">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" crossorigin="anonymous">
+    <!--Billboard.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/1.12.7/theme/insight.min.css" media="none" onload="if(media!='all')media='all'">
     <!--Hack Font-->
-    <link href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack-subset.min.css" rel="stylesheet" type="text/css">
     <!--D2coding Font-->
     <link href="https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css" rel="stylesheet" type="text/css">
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-
-    <!--Billboard.js-->
-    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
-    <script async src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/theme/insight.min.css">
-
-    <!--Embedly-->
-    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    </script>
 </head>
 
 
@@ -930,12 +905,107 @@
         </div>
         <!-- // wrap -->
     </s_t3>
+    <!--HightlightJS-->
+    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/languages/scheme.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/languages/java.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/languages/haskell.min.js"></script>
+    <script>
+     document.addEventListener('DOMContentLoaded', (event) => {
+       document.querySelectorAll('code').forEach((block) => {
+	 hljs.highlightBlock(block);
+       });
+     });
+    </script>
 
+    <!--Billboard.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/1.12.7/billboard.min.js"></script>
+    <!--Embedly-->
+    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    <!--Multilangul-->
+    <script src="https://cdn.jsdelivr.net/npm/multilingual.js@0.1.41/dist/jquery.multilingual.min.js"></script>
+    <script>
+     $(document).ready(function(e){
+       $(".hljs").multilingual([
+         "ko"
+       ]);
+     });
+    </script>
+
+    <!--MathJax(LaTeX) -->
+    <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       "HTML-CSS": {
+	 messageStyle: "normal",
+	 linebreaks: {
+	   automatic: false
+	 },
+	 undefinedFamily: "'STIX Two Math', STIXGeneral, 'Arial Unicode MS', 'Noto Serif KR', serif"
+       },
+       tex2jax: {
+	 inlineMath: [["$","$"],["\\(","\\)"]],
+	 displayMath: [["$$","$$"],["\\[","\\]"]],
+	 processEscapes: true
+       },
+       TeX: {
+	 Macros: {
+	   tr: "{\\scriptscriptstyle\\mathrm{T}}",
+	 },
+	 extensions: ["AMSmath.js", "AMSsymbols.js", "color.js", "mhchem.js"]
+       }
+     });
+    </script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+    </script>
+
+    <script>
+     //iframe responsive
+     $(".article iframe, .article embed").each(function(index) {
+       var tmpW = $(this).width();
+       var tmpH = $(this).height();
+       var ratio = tmpH/tmpW;
+       $(this).wrap('<div class="video-wrap" style="width:'+$(this).width()+'px"></div>').wrap('<div class="video-container" style="padding-bottom:'+ratio*100+'%;"></div>');
+     });
+     });
+    </script>
+
+    <script>
+     // 댓글 더 보기 플러그인 - http://nubiz.tistory.com/546
+     var thresholdCount = 5; //댓글 표시 갯수
+     $("li[id^='comment']").parent().first().addClass("nubiz");
+     var commentCount = $(".nubiz>li[id^='comment']").length;
+
+     $(".nubiz").append('<button id="moreComment" onclick="moreComment()" style="display:none"> 보기 </button><button id="allComment" onclick="showAllComment()" style="display:none">전체</br>보기</button><style>#moreComment {width: 85%;height: 50px;font-weight: bold;background-color: #eee;float:left;}#allComment{width: 15%;height: 50px;font-size: .9em;font-weight: bold;background-color: #eee;}#moreComment:hover,#allComment:hover {color:#fff;background-color: #999;}</style>')
+
+     function refeshComment() {
+       $("#moreComment").html("더 보기 [ " + $("li[id^=comment]:visible").length + "/" + $("li[id^='comment']").length + " ]");
+     }
+
+     function moreComment() {
+       $(".nubiz>li[id^='comment']:hidden:lt("+thresholdCount+")").show(500)
+       if($("li[id^='comment']:hidden")[0]==undefined){
+         $("#moreComment, #allComment").hide(500)
+       };
+       refeshComment();
+     }
+
+     function showAllComment() {
+       $(".nubiz>li[id^=comment]").show(500);
+       $("#moreComment, #allComment").hide(500);
+     }
+
+     if (commentCount > thresholdCount) {
+       $("#moreComment, #allComment").show();
+       $(".nubiz>li[id^='comment']:gt(" + (thresholdCount-1) + ")").hide();
+       refeshComment();
+     };
+     $("li[id^='ttMorePreviousComments']").click(function(){showAllComment()});
+    </script>
+    <script>
+     $('.article_content').find('table').each(function (idx, el) {
+       $(el).wrap('<div class="table-overflow">')
+     })
+    </script>
 </body>
-<script>
-    $('.article_content').find('table').each(function (idx, el) {
-        $(el).wrap('<div class="table-overflow">')
-    })
-</script>
-
 </html>
