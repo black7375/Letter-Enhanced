@@ -1457,6 +1457,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   outline: none;
+  padding-left: 0px;
 }
 
 .index_type_common .btn_post_more {
